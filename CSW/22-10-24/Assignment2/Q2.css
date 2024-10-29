@@ -1,0 +1,14 @@
+#p1{
+    width: 400px;
+    padding: 20px;
+    border: 10px solid magenta;
+    margin: 15px;
+}
+img{
+    height: 120px;
+}
+#main{
+    display: flex;
+}
+
+

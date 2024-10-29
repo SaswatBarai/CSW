@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+
+    <div class="main-container">
+        <div class="container1" style="display: none;">
+            Hello Div 1
+        </div>
+        <br>
+        <div class="container2" style="display: none;">
+            Hello Div 2
+        </div>
+        <br>
+        <div class="container3" style="display: none;">
+            Hello Div 3
+        </div>
+    </div>
+    <!-- <button id="Inbtn">
+        FadeIn
+    </button>
+    <button id="Outbtn">
+        FadeOut
+    </button> -->
+    <button id="btn">
+        FadeTo
+    </button>
+
+    
+    <script>
+        
+        // $(document).ready(() => {
+        // Fade_IN
+        //     $("#Inbtn")
+        //     .click(() => {
+        //         $(".container1").fadeIn();
+        //         $(".container2").fadeIn("slow");
+        //         $(".container3").fadeIn("fast");
+
+        //     });
+
+        //     //Fade_OUT
+        //     $("#Outbtn").click(()=>{
+        //         $(".container1").fadeOut();
+        //         $(".container2").fadeOut("slow");
+        //         $(".container3").fadeOut("fast");
+        //     });
+        //     $(".container2").dblclick(()=>{
+        //         window.open("https://saswat-barai.me");
+        //     })
+
+        // });
+        //fadeToggle
+
+        // $(document).ready(
+        //     ()=>{
+        //         $("#Tbtn").click(() => {
+        //             $(".container1").fadeToggle();
+        //             $(".container2").fadeToggle("slow");
+        //             $(".container3").fadeToggle("fast");
+        //         });
+        //     }
+        // )
+        
+        //fadeTo Function
+        $(document).ready(()=>{
+            $("#btn").click(() => {
+                $(".container1").fadeTo("",0.1);
+                $(".container2").fadeTo("slow",.30);
+                $(".container3").fadeTo("fast",.80);
+            })
+        })
+    </script>
+</body>
+</html>
+
+</html>

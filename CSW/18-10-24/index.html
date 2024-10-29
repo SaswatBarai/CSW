@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        body{
+            background-color: rgb(255, 200, 0);
+        }
+        div {
+            background-color: rgb(241, 118, 24);
+            border-radius: 5px;
+            padding: 10px;
+            color: black;
+            width: 50%;
+            input{
+                border: 1px dashed rgb(0, 0, 0);
+                outline-color: green;
+            }
+            #flow1:hover{
+                background-color: brown;
+                
+            }
+            #flow1:active{
+                background-color: blue;
+                color: white;
+            }
+
+        }
+    </style>
+    <div id="form" method="get">
+        <form action="./thank.html">
+            <label for="text1" id="fname"> Enter Your First Name
+                <br>
+                <input type="text" placeholder="Your First Name" id="text1">
+            </label>
+
+            <br>
+            <br>
+            <label for="text2"> Enter Your Last Name
+                <br>
+                <input type="text" placeholder="Your Last Name" id="text2">
+            </label>
+            <br>
+            <br>
+            <label for="mail"> Enter Your Mail
+                <br>
+                <input type="email" placeholder="xyz@gmail.com" id="mail">
+            </label>
+            <br>
+            <br>
+            <label for="DOB">Enter Your DOB
+                <input type="date" id="DOB">
+            </label>
+            <br>
+            <br>
+            <label for="Radio"> Select Your Gender
+                <input type="radio" name="Gender" id="g1"> <label for="radio" >Male</label>
+                <input type="radio" name="Gender" id="g2"> <label for="radio">Female</label>
+            </label>
+            <br>
+            <br>
+            <label for="Edu">Select Your Educational Qulifications</label>
+            <br>
+            <input type="checkbox" id="ch1"><label for="ch1">10<sup>th</sup></label>
+            <br>
+            <input type="checkbox" id="ch2"><label for="ch2">12<sup>th</sup></label>
+            <br>
+            <input type="checkbox" id="ch3"><label for="ch3">Btech</label>
+            <br>
+            <input type="checkbox" id="ch4"><label for="ch4">Mtech</label>
+            <br>
+            <input type="checkbox" id="ch5"><label for="ch5">PHD</label>
+            <br>
+            <br>
+            <label for="Edu">Select Your Hobbies</label>
+            <br>
+            <input type="checkbox" id="ho1"><label for="ho1">Sleeping</label>
+            <br>
+            <input type="checkbox" id="ho2"><label for="ho2">Coding</label>
+            <br>
+            <input type="checkbox" id="ho3"><label for="ho3">Again Sleeping</label>
+            <br>
+            <input type="checkbox" id="ho4"><label for="ho4">Eating</label>
+            <br>
+            <input type="checkbox" id="ho5"><label for="ho5">Gyming</label>
+            <br>
+            <br>
+            <label for="dd1">     Select Your Education</label>
+            <select name="dd1" id="dd1">
+           
+                <option for="dd1" disabled selected>Choose</option>
+                <option for="dd1">Btech</option>
+                <option for="dd1">Mtech</option>
+                <option for="dd1">Phd</option>
+            </select>
+            <br>
+            <br>
+            <label for="file">Choose Your File</label>
+            <input type="file" name="" id="file1">
+            <br>
+            <br>
+            <input type="Submit" id="flow1">
+        </form>
+    </div>
+</body>
+
+</html>

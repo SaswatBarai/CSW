@@ -1,0 +1,30 @@
+.a{
+    outline-style: hidden;
+}
+.b{
+    outline-style: outset ;
+}
+.c{
+    outline-style: inset;
+}
+.d{
+    outline-style: none;
+}
+.e{
+    outline-style: ridge;
+}
+.f{
+    outline-style: groove;
+}
+.g{
+    outline-style: double;
+}
+.h{
+    outline-style: dotted;
+}
+.i{
+    outline-style: dashed;
+}
+.j{
+    outline-style: solid;
+}

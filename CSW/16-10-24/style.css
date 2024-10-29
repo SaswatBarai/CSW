@@ -1,0 +1,21 @@
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,
+td {
+    text-align: left;
+    padding: 10px;
+}
+
+tr:nth-child(even) {
+    background-color: dodgerblue;
+}
+div{
+    overflow-x: auto;
+
+}
+tr{
+  
+}

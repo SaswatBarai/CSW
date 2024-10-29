@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: #3F84B3;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+#l1{
+	list-style-type:decimal;
+}
+#l2{
+	list-style-type:upper-alpha;
+}
+#l3{
+	list-style-type:lower-alpha;
+}
+#l4{
+	list-style-type:lower-greek;
+}
+#l5{
+	list-style-type:circle;
+}
+#l6{
+	list-style-type:decimal-leading-zero;
+}
+#l7{
+	list-style-type:square;
+}
+#l8{
+	list-style-type:disc;
+}
+#l9{
+	list-style-type:upper-roman;
+}
+#l10{
+	list-style-type:lower-roman;
+}

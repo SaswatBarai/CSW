@@ -1,0 +1,38 @@
+table {
+    border-collapse: collapse;
+    border:4px solid rgb(255, 0, 0);
+    height: 100%;
+    width: 100%;
+  
+  }
+  th, td {
+    border: 4px solid rgb(244, 48, 48);
+    padding: 9px;
+    text-align: center;
+  }
+  th{
+    height: 80px;
+  }
+#r1c3{
+    list-style-type: circle;
+    text-align: left;
+}
+#r2c3{
+    list-style-type:disc;
+    text-align: left;
+}
+#r3c3{
+    list-style-type: square;
+    text-align: left;
+}
+#r4c3{
+    list-style-type: lower-alpha;
+    text-align: left;
+}
+table tr:nth-child(even) {
+    background-color: blue;
+    color: white;
+}
+table tr:nth-child(odd){
+    background-color: yellow;
+}

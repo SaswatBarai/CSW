@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <h1>Jquery</h1>
+    <p>Hello World</p>
+    <button id="hide">Hide Me</button>
+    <button id="show">Show Me</button>
+    <button id="toggle">Toggle Me</button>
+    
+</body>
+<script>
+        $(document).ready(() => {
+            $("#hide").click(() => {
+                $("h1").hide();
+            });
+            $("#show").click(() => {
+                $("h1").show();
+            });
+            $("#toggle").click(() => {
+                $("h1").toggle();
+            });
+            $("p").dblclick(()=>{
+                $("h1").hide();
+            })
+            $("h1").mouseenter(()=>{
+                alert("Mouse is entering");
+            })
+            $("h1").mouseleave(()=>{
+                alert("Mouse is leaving");
+            })
+        });
+    </script>
+</html>
