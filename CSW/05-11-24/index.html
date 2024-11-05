@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+  </head>
+  <style></style>
+  <body>
+    <div class="main-container">
+      <div class="details">
+        <p id="p1">Name:Saswat Barai</p>
+        <p id="p2">Redg:<i>2341002028</i></p>
+        <input type="text" value="7978826224" id="p3" />
+        <br />
+        <a href="https://www.google.com">Go To Website</a>
+      </div>
+      <br />
+      <button id="text">Text</button>
+      <button id="html">HTML</button>
+      <button id="attr">Attr</button>
+      <button id="value">Value</button>
+    </div>
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script>
+    //GET attribute in jquery
+    $(document).ready(function () {
+      $("#text").click(function () {
+        let str1 = $("#p1").text();
+        alert(str1);
+      });
+      $("#html").click(function () {
+        let str2 = $("#p2").html();
+        alert(str2);
+      });
+      $("#value").click(function () {
+        let str3 = $("#p3").val();
+        alert(str3);
+      });
+      $("#attr").click(function () {
+        let str4 = $("a").attr("href");
+        $("a").attr({
+          href: "https://www.soa.ac.in/",
+        });
+        alert(str4);
+      });
+    });
+  </script>
+</html>

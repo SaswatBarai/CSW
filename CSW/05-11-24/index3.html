@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <p id="p1">Name:Saswat</p>
+    <p id="p2">List Of Topics:
+        <ol id="list">
+            <li>Introduction</li>
+            <li>HTML</li>
+            <li>CSS</li>
+        </ol>
+    </p>
+    <button id="paraAdd">Paragraph Addition</button>
+    <button id="append2">Append List</button>
+    <button id="btn1">Prepend1</button>
+    <button id="btn2">Prepend2</button>
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+	$("#paraAdd").click(function (){
+			$("#p1").append(" Barai");
+		});
+
+	$("#append2").click(function(){
+			$("#list").append("<li>Javascript</li>");
+	});
+    $("#btn1").click(function (){
+			$("#p1").prepend("Sri ");
+		});
+
+	$("#btn2").click(function(){
+			$("#list").prepend("<li>Javascript2</li>");
+	});
+    
+})
+</script>
+</html>

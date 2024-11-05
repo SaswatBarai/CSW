@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+</head>
+<style>
+    .red {
+        color: red;
+    }
+
+    .green {
+        color: green;
+    }
+
+    .blue {
+        color: blue;
+    }
+</style>
+
+<body>
+    <h1>Saswat Barai</h1>
+    <h2>2341002028</h2>
+    <h3>Saswatbarai611@gmail.com</h3>
+    <p id="p1">I am a web developer with over a year of experience in building interactive websites using HTML, CSS,
+        JavaScript, and Node.js. I have a solid grasp of backend technologies like Express.js and SQL, along with
+        experience in version control using Git. Currently pursuing a B.Tech, I’m always eager to learn and improve.
+        Beyond coding, I enjoy staying active and following a healthy lifestyle.</p>
+    <p id="p2">Hobbies
+    <ul>
+        <li>Coding</li>
+        <li>Sleeping</li>
+    </ul>
+    </p>
+    <button id="btn1"> Add</button>
+    <button id="btn2">Remove</button>
+    <button id="btn3">Toggle</button>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $("#btn1").click(function () {
+            $("h1,h2,h3").addClass("red");
+            $("p").addClass("green");
+            $("ul").addClass("blue");
+        });
+        $("#btn2").click(function () {
+            $("h1,h2,h3").removeClass("red");
+            $("p").removeClass("green");
+            $("ul").removeClass("blue");
+        });
+        $("#btn3").click(function () {
+            $("h1,h2,h3").toggleClass("red");
+            $("p").toggleClass("green");
+            $("ul").toggleClass("blue");
+        });
+
+    });
+
+</script>
+
+</html>
