@@ -1,0 +1,14 @@
+#main{
+    height: 250px;
+    width: 400px;
+    border: 2px solid;
+    background-repeat: no-repeat;
+    background-image: url("./71gb7pmXQYL._SY450_.jpg");
+}
+#main:hover{
+   background-repeat: no-repeat;
+    background-image: url("./ninja-hatori.webp");
+    img{
+        height:300px ;
+    }
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        .main-container {
+            border: 0.1rem solid black;
+            width: 50%;
+            height: 10rem;
+            position: relative; /* Added positioning */
+            left: 0; /* Set initial position */
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        Hello Bhai Log
+    </div>
+    <br>
+    <button>Move Left</button>
+
+    <script>
+        $(document).ready(() => {
+            $("button").click(() => {
+                $(".main-container").animate({ left: "300px" });
+          
+
+            });
+        });
+    </script>
+</body>
+</html>

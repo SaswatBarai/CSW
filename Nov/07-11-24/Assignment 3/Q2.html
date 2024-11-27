@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<style>
+    div{
+        border: 1.5rem solid black;
+        width: 100px;
+        background-color: red;
+        height: 200px;
+    }
+    div:hover{
+        border: 1.5rem solid green;
+    }
+</style>
+<body>
+    <div>
+        Hello
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("div").click(function(){
+            $(this).text("Clicked");
+        })
+        $("div").dblclick(function(){
+            $(this).css({
+                "background-color": "orange"
+            })
+        })
+        $("div").click(function(){
+            $(this).text("Clicked");
+        })
+        $("div").click(function(){
+            $(this).text("Clicked");
+        })
+      
+      
+    });
+</script>
+</html>

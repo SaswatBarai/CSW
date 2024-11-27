@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="main-container">
+    <p id="p1">Name: Saswat Barai</p>
+    <p id="p2">Phone No: 7978826224</p>
+    <p id="p3">Gmail: saswatbarai611@gmail.com</p>
+    <input type="text" value="2341002028">
+  </div>
+
+  <button id="btn1">Remove</button>
+  <button id="btn2">Empty</button>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script>
+    $(document).ready(function(){
+        $("#btn1").click(function(){
+            $("#p2, #p3").remove(); 
+        });
+        $("#btn2").click(function(){
+            $(".main-container").empty();
+        });
+    });
+  </script>
+
+</body>
+</html>

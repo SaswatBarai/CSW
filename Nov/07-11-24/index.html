@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+	<h1>Saswat Barai</h1>
+    <p id="p1" class="red" >Para 1</p>
+    <p id="p2" class="red">Para 2</p>
+    <p id="p3" class="green">Para 3</p>
+    <p id="p4" class="green">Para 4</p>
+    <p id="p5" class="blue">Para 5</p>
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("p").first().css({
+			"border":"2px solid red"
+		})
+        $("p").last().css({
+			"border":"2px solid yellow"
+		})
+        $("p").eq(2).css({
+			"border":"2px solid blue"
+		})
+        $("p").not(".blue").css({
+			"border":"2px solid green"
+		})
+        $("p").filter(".green").css({
+			"border":"2px solid cyan"
+		})
+    });
+</script>
+</html>

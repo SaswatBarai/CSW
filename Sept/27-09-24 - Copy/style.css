@@ -1,0 +1,41 @@
+body{
+    background-color: #9ed5a9;
+}
+#h1 {
+    color: rgb(121, 121, 236);
+}
+#h2 {
+    color: red;
+}
+
+#p3 {
+    color: green;
+}
+#obj3{
+background-color:#e996ff;
+}
+table{
+    border-collapse: collapse;
+
+}
+tr,td,th{
+	color:white;
+    text-align: center;
+    border: 3px solid white;
+	padding:10px;
+
+   
+  
+}
+.row1{
+	background-color:red;
+}
+.row2{
+	background-color:blue;
+}
+.row3{
+	background-color:rgb(55, 78, 255);
+}
+.row4{
+	background-color:brown;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<style>
+div{
+    background-color: red;
+    width: 200px;
+    height: 200px;
+
+}
+</style>
+<body>
+    <button id="red">REd</button>
+    <button id="green">Green</button>
+	<button id="blue">Blue</button>
+    <button id="tog">Toggle</button>
+    <div>
+        jkbjh
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script>
+    $(document).ready(function(){
+	$("#red").click(function(){
+			$("body").css("background","red")
+		});
+	$("#green").click(function(){
+			$("body").css("background","green")
+		});
+	$("#blue").click(function(){
+			$("body").css("background","blue")
+		});
+	$("#tog").click(function(){
+			$("div").toggle();
+		});
+	})
+</script>
+</html>

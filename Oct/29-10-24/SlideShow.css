@@ -1,0 +1,13 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.header,.footer{
+    margin: 5px 15px;
+    background-color: black;
+    color: wheat;
+    cursor: pointer;
+    width: 11rem;
+}

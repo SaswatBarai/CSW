@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<style>
+div,p{
+    border: 0.1rem solid black;
+    margin: 1.6rem;
+    padding: 1rem;
+}
+</style>
+<body>
+    <div id="div1">(Great Great Grand Parent)
+        <div id="div2">(Great Grand Parent)
+            <div id="div3">(Grand Parent)
+                <div id="div4">(Parent)
+                    <p id="p1">Paragraph(Chotu1)</p>
+                    <p id="p2">Paragraph(Chotu2)</p>
+                    <p id="p3">Paragraph(Chotu3)</p>
+                    <p id="p4">Paragraph(Chotu4)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script>
+    $(document).ready(function(){
+        // $("#p1").parent().css({
+        //     "border": "0.2rem solid blue",
+        //     "color":"black"
+        // });
+
+        // $("#p1").parents().css({
+        //     "border": "0.2rem solid blue",
+        //     "color":"green"
+        // });
+
+        // $("#p1").parentsUntil("#div2").css({
+        //     "border": "0.2rem solid blue",
+        //     "color":"red"
+        // });
+
+        // $("#div1").children().css({
+        //     "color":"red",
+        //     "border": "0.2rem solid blue"
+        // });
+
+        // $("#div1").find("").css({
+        //     "color":"red",
+        //     "border":"0.2rem solid blue"
+        // });
+
+        //Siblings of Div4
+        // $("#div4").children().css({
+        //     "border":"0.2rem solid red"
+        // })
+
+        // $("#p1").nextAll().css({
+        //     "border": "0.2rem solid blue",
+        // });
+
+        $("#p1").nextUntil("#p4").css({
+            "border": "0.2rem solid blue",
+        })
+    });
+</script>
+</html>

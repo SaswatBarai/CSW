@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="SlideShow.css" />
+  </head>
+  <script>
+    $(document).ready(() => {
+      $(".header").click(() => {
+        $(".details").slideDown(8000);
+      });
+      $(".footer").click(() => {
+        $(".details").slideUp(8000);
+      });
+      $("#Toggle").click(() => {
+        $(".details").slideToggle(8000);
+      });
+      $("#stp").click(() => {
+        $(".details").stop();
+      });
+    });
+  </script>
+  <body>
+    <div class="header">Click Here to show Details</div>
+
+    <div class="details">
+      <pre>
+            Name:Saswat Barai
+            Regd:2341002028
+            Sec:23412G2
+        </pre
+      >
+    </div>
+
+    <div class="footer">
+      Click Here To Hide Details
+      <button id="Toggle">Toggle</button>
+    </div>
+    <button id="stp">Stop</button>
+  </body>
+</html>
