@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-=======
+
     // Fetching the url of the website
     const pathname = window.location.pathname;
     const fileName = pathname.split('/').pop();
